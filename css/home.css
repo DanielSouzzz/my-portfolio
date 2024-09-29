@@ -14,8 +14,8 @@ body {
     background-color: #333;
     padding: 10px 20px;
     display: flex;
-    justify-content: flex-start; /* Alinha o menu à esquerda */
-    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .nav-menu {
@@ -24,7 +24,7 @@ body {
 }
 
 .nav-menu li {
-    margin-left: 20px; /* Espaçamento entre os itens do menu */
+    margin-left: 20px;
 }
 
 .nav-menu li:first-child {
@@ -40,8 +40,7 @@ body {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(to right, #1A1A2E, #16213E, #0F3460, #53354A); /* Gradiente com tons masculinos e modernos */
-    background-size: cover;
+    background: linear-gradient(to right, #1A1A2E, #16213E, #0F3460, #53354A);
     color: #fff;
 }
 
@@ -89,6 +88,36 @@ body {
 
 .skill img {
     width: 50px;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card h3 {
+    padding: 10px;
 }
 
 footer {
