@@ -125,10 +125,10 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    z-index: 100;
+    margin-top: 20px;
+    clear: both;
 }
 
 
