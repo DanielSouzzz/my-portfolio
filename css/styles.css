@@ -132,20 +132,21 @@ footer {
 }
 
 
-/* Estilos para responsividade em dispositivos móveis */
+/*responsividade em dispositivos móveis */
 @media (max-width: 600px) {
     .navbar {
         justify-content: center; /* Alinha o menu ao centro em dispositivos móveis */
     }
 
     .nav-menu {
-        flex-direction: column;
+        flex-direction: row; /* Garante que os itens fiquem em linha */
+        flex-wrap: wrap;
         margin-top: 10px;
     }
 
     .nav-menu li {
-        margin-left: 0;
-        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-bottom: 0;
     }
 
     .hero h1 {
@@ -154,9 +155,5 @@ footer {
 
     .hero p {
         font-size: 18px;
-    }
-
-    .project-card {
-        margin: 10px 0;
     }
 }
