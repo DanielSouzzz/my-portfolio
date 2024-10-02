@@ -104,6 +104,10 @@ body {
     width: 50px;
 }
 
+.project {
+    justify-content: center;
+    align-items: c;
+}
 
 .project-grid {
     display: grid;
